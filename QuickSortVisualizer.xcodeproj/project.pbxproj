@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		727AD1BF2C41E7FD0032110B /* QuickSortVisualizer_iOS_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AD1BE2C41E7FD0032110B /* QuickSortVisualizer_iOS_App.swift */; };
+		727AD1C32C41E7FE0032110B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727AD1C22C41E7FE0032110B /* Assets.xcassets */; };
+		727AD1C62C41E7FE0032110B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727AD1C52C41E7FE0032110B /* Preview Assets.xcassets */; };
+		727AD1CD2C41EBF20032110B /* QuickSortVisualizerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 727AD1CC2C41EBF20032110B /* QuickSortVisualizerLib */; };
+		727AD1CF2C41EC010032110B /* QuickSortVisualizerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 727AD1CE2C41EC010032110B /* QuickSortVisualizerLib */; };
+		727AD1D22C41F36B0032110B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AD1D12C41F36B0032110B /* MainView.swift */; };
+		728073342C277D5B00CA6A8C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728073282C277D5B00CA6A8C /* MainView.swift */; };
+		728073352C277D5B00CA6A8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7280732A2C277D5B00CA6A8C /* Preview Assets.xcassets */; };
+		728073382C277D5B00CA6A8C /* QuickSortVisualizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728073302C277D5B00CA6A8C /* QuickSortVisualizerApp.swift */; };
+		728073392C277D5B00CA6A8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728073312C277D5B00CA6A8C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		727AD1BC2C41E7FD0032110B /* QuickSortVisualizer(iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuickSortVisualizer(iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		727AD1BE2C41E7FD0032110B /* QuickSortVisualizer_iOS_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSortVisualizer_iOS_App.swift; sourceTree = "<group>"; };
+		727AD1C22C41E7FE0032110B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		727AD1C52C41E7FE0032110B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		727AD1CA2C41EAA90032110B /* QuickSortVisualizerLib */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = QuickSortVisualizerLib; sourceTree = "<group>"; };
+		727AD1D12C41F36B0032110B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		728073282C277D5B00CA6A8C /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7280732A2C277D5B00CA6A8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7280732F2C277D5B00CA6A8C /* QuickSortVisualizer.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = QuickSortVisualizer.entitlements; sourceTree = "<group>"; };
+		728073302C277D5B00CA6A8C /* QuickSortVisualizerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSortVisualizerApp.swift; sourceTree = "<group>"; };
+		728073312C277D5B00CA6A8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72A93C932C1E4E4E0086F1EC /* QuickSortVisualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickSortVisualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		727AD1B92C41E7FD0032110B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727AD1CF2C41EC010032110B /* QuickSortVisualizerLib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A93C902C1E4E4E0086F1EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727AD1CD2C41EBF20032110B /* QuickSortVisualizerLib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		727AD1BD2C41E7FD0032110B /* QuickSortVisualizer(iOS) */ = {
+			isa = PBXGroup;
+			children = (
+				727AD1BE2C41E7FD0032110B /* QuickSortVisualizer_iOS_App.swift */,
+				727AD1C22C41E7FE0032110B /* Assets.xcassets */,
+				727AD1C42C41E7FE0032110B /* Preview Content */,
+				727AD1D12C41F36B0032110B /* MainView.swift */,
+			);
+			path = "QuickSortVisualizer(iOS)";
+			sourceTree = "<group>";
+		};
+		727AD1C42C41E7FE0032110B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				727AD1C52C41E7FE0032110B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		727AD1CB2C41EBF20032110B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		728073292C277D5B00CA6A8C /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				728073282C277D5B00CA6A8C /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		7280732B2C277D5B00CA6A8C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7280732A2C277D5B00CA6A8C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		728073322C277D5B00CA6A8C /* QuickSortVisualizer */ = {
+			isa = PBXGroup;
+			children = (
+				728073292C277D5B00CA6A8C /* MainView */,
+				7280732B2C277D5B00CA6A8C /* Preview Content */,
+				7280732F2C277D5B00CA6A8C /* QuickSortVisualizer.entitlements */,
+				728073302C277D5B00CA6A8C /* QuickSortVisualizerApp.swift */,
+				728073312C277D5B00CA6A8C /* Assets.xcassets */,
+			);
+			path = QuickSortVisualizer;
+			sourceTree = "<group>";
+		};
+		72A93C8A2C1E4E4E0086F1EC = {
+			isa = PBXGroup;
+			children = (
+				727AD1CA2C41EAA90032110B /* QuickSortVisualizerLib */,
+				728073322C277D5B00CA6A8C /* QuickSortVisualizer */,
+				727AD1BD2C41E7FD0032110B /* QuickSortVisualizer(iOS) */,
+				72A93C942C1E4E4E0086F1EC /* Products */,
+				727AD1CB2C41EBF20032110B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		72A93C942C1E4E4E0086F1EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72A93C932C1E4E4E0086F1EC /* QuickSortVisualizer.app */,
+				727AD1BC2C41E7FD0032110B /* QuickSortVisualizer(iOS).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		727AD1BB2C41E7FD0032110B /* QuickSortVisualizer(iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 727AD1C92C41E7FE0032110B /* Build configuration list for PBXNativeTarget "QuickSortVisualizer(iOS)" */;
+			buildPhases = (
+				727AD1B82C41E7FD0032110B /* Sources */,
+				727AD1B92C41E7FD0032110B /* Frameworks */,
+				727AD1BA2C41E7FD0032110B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QuickSortVisualizer(iOS)";
+			packageProductDependencies = (
+				727AD1CE2C41EC010032110B /* QuickSortVisualizerLib */,
+			);
+			productName = "QuickSortVisualizer(iOS)";
+			productReference = 727AD1BC2C41E7FD0032110B /* QuickSortVisualizer(iOS).app */;
+			productType = "com.apple.product-type.application";
+		};
+		72A93C922C1E4E4E0086F1EC /* QuickSortVisualizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A93CB82C1E4E4F0086F1EC /* Build configuration list for PBXNativeTarget "QuickSortVisualizer" */;
+			buildPhases = (
+				72A93C8F2C1E4E4E0086F1EC /* Sources */,
+				72A93C902C1E4E4E0086F1EC /* Frameworks */,
+				72A93C912C1E4E4E0086F1EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickSortVisualizer;
+			packageProductDependencies = (
+				727AD1CC2C41EBF20032110B /* QuickSortVisualizerLib */,
+			);
+			productName = AnimatedQuickSort;
+			productReference = 72A93C932C1E4E4E0086F1EC /* QuickSortVisualizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72A93C8B2C1E4E4E0086F1EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					727AD1BB2C41E7FD0032110B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					72A93C922C1E4E4E0086F1EC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 72A93C8E2C1E4E4E0086F1EC /* Build configuration list for PBXProject "QuickSortVisualizer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72A93C8A2C1E4E4E0086F1EC;
+			packageReferences = (
+				727AD1D02C41EF0D0032110B /* XCLocalSwiftPackageReference "QuickSortVisualizerLib" */,
+			);
+			productRefGroup = 72A93C942C1E4E4E0086F1EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72A93C922C1E4E4E0086F1EC /* QuickSortVisualizer */,
+				727AD1BB2C41E7FD0032110B /* QuickSortVisualizer(iOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		727AD1BA2C41E7FD0032110B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727AD1C62C41E7FE0032110B /* Preview Assets.xcassets in Resources */,
+				727AD1C32C41E7FE0032110B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A93C912C1E4E4E0086F1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728073352C277D5B00CA6A8C /* Preview Assets.xcassets in Resources */,
+				728073392C277D5B00CA6A8C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		727AD1B82C41E7FD0032110B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727AD1D22C41F36B0032110B /* MainView.swift in Sources */,
+				727AD1BF2C41E7FD0032110B /* QuickSortVisualizer_iOS_App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A93C8F2C1E4E4E0086F1EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728073342C277D5B00CA6A8C /* MainView.swift in Sources */,
+				728073382C277D5B00CA6A8C /* QuickSortVisualizerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		727AD1C72C41E7FE0032110B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QuickSortVisualizer(iOS)/Preview Content\"";
+				DEVELOPMENT_TEAM = T9559G4W45;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AntonHryshchuk.QuickSortVisualizer-iOS-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		727AD1C82C41E7FE0032110B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QuickSortVisualizer(iOS)/Preview Content\"";
+				DEVELOPMENT_TEAM = T9559G4W45;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AntonHryshchuk.QuickSortVisualizer-iOS-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72A93CB62C1E4E4F0086F1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72A93CB72C1E4E4F0086F1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		72A93CB92C1E4E4F0086F1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuickSortVisualizer/QuickSortVisualizer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QuickSortVisualizer/Preview Content\"";
+				DEVELOPMENT_TEAM = T9559G4W45;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AntonHryshchuk.QuickSortVisualizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		72A93CBA2C1E4E4F0086F1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuickSortVisualizer/QuickSortVisualizer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QuickSortVisualizer/Preview Content\"";
+				DEVELOPMENT_TEAM = T9559G4W45;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AntonHryshchuk.AnimatedQuickSort;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		727AD1C92C41E7FE0032110B /* Build configuration list for PBXNativeTarget "QuickSortVisualizer(iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727AD1C72C41E7FE0032110B /* Debug */,
+				727AD1C82C41E7FE0032110B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A93C8E2C1E4E4E0086F1EC /* Build configuration list for PBXProject "QuickSortVisualizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A93CB62C1E4E4F0086F1EC /* Debug */,
+				72A93CB72C1E4E4F0086F1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A93CB82C1E4E4F0086F1EC /* Build configuration list for PBXNativeTarget "QuickSortVisualizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A93CB92C1E4E4F0086F1EC /* Debug */,
+				72A93CBA2C1E4E4F0086F1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		727AD1D02C41EF0D0032110B /* XCLocalSwiftPackageReference "QuickSortVisualizerLib" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = QuickSortVisualizerLib;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		727AD1CC2C41EBF20032110B /* QuickSortVisualizerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QuickSortVisualizerLib;
+		};
+		727AD1CE2C41EC010032110B /* QuickSortVisualizerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QuickSortVisualizerLib;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 72A93C8B2C1E4E4E0086F1EC /* Project object */;
+}
