@@ -38,5 +38,5 @@ struct MainView: View {
 }
 
 #Preview {
-    MainView(viewModel: QSortViewModel())
+    MainView(viewModel: QSortViewModel(algorithm: .init()))
 }

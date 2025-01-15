@@ -10,7 +10,7 @@ import QuickSortVisualizerLib
 
 @main
 struct QuickSortVisualizer_iOS_App: App {
-    let qSortViewModel = QSortViewModel()
+    let qSortViewModel = QSortViewModel(algorithm: .init())
     var body: some Scene {
         WindowGroup {
             MainView(viewModel: qSortViewModel)

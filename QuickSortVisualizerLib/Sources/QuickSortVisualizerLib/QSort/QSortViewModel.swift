@@ -19,7 +19,7 @@ public protocol QSortState {
 }
 
 public protocol QSortOutput: Observable  {
-    var array: [CGFloat] { get }
+    var outputArray: [CGFloat] { get }
     var leftIndex: Int? { get }
     var rightIndex: Int? { get }
 }
@@ -27,16 +27,22 @@ public protocol QSortOutput: Observable  {
 public protocol QSortViewModelType: QSortInput & QSortOutput & QSortState {}
 
 @Observable public class QSortViewModel: QSortViewModelType {
-    public var array: [CGFloat]
+    public var outputArray: [CGFloat]
     public var arraySize: Int {
         didSet {
-            generateArray()
+            self.array = ArrayGenerator.generateArrayWith(size: arraySize, maxElement: arrayMaxElement)
+            DispatchQueue.main.async {
+                self.outputArray = self.array
+            }
         }
     }
     
     public var arrayMaxElement: Int {
         didSet {
-            generateArray()
+            self.array = ArrayGenerator.generateArrayWith(size: arraySize, maxElement: arrayMaxElement)
+            DispatchQueue.main.async {
+                self.outputArray = self.array
+            }
         }
     }
     public var isRunning: Bool = false
@@ -45,23 +51,30 @@ public protocol QSortViewModelType: QSortInput & QSortOutput & QSortState {}
     @ObservationIgnored
     public var rightIndex: Int?
     
+    private var array: [CGFloat]
     private var workItem: DispatchWorkItem?
-
     private let workQueue = DispatchQueue(
         label: "com.sort.queue",
         qos: .userInitiated,
         attributes: .concurrent
     )
+    private let algorithm: QuickSortAlgorithm
     
     public init(
         array: [CGFloat] = [CGFloat](),
         arraySize: Int = 100,
-        arrayMaxElement: Int = 500
+        arrayMaxElement: Int = 500,
+        algorithm: QuickSortAlgorithm
     ) {
         self.array = array
         self.arraySize = arraySize
         self.arrayMaxElement = arrayMaxElement
-        generateArray()
+        self.array = ArrayGenerator.generateArrayWith(size: arraySize, maxElement: arrayMaxElement)
+        self.outputArray = array
+        self.algorithm = algorithm
+        DispatchQueue.main.async {
+            self.outputArray = self.array
+        }
     }
     
     public func start() {
@@ -70,13 +83,20 @@ public protocol QSortViewModelType: QSortInput & QSortOutput & QSortState {}
         }
         self.isRunning = true
         workItem = .init(block: { [unowned self] in
-            var mutatingSelf = self
-            mutatingSelf.sort(low: 0, high: mutatingSelf.array.count - 1)
+            algorithm.quickSort(&self.array) { [unowned self] leftidx, rightIdx in
+                self.leftIndex = leftidx
+                self.rightIndex = rightIdx
+                DispatchQueue.main.async {
+                    self.outputArray = self.array
+                }
+
+                _ = self.workItem?.wait(timeout: .now() + .milliseconds(3))
+            }
             assert(self.array == self.array.sorted(), "The array is not sorted")
             self.leftIndex = 0
             for i in 0...self.arraySize {
                 self.rightIndex = i
-                self.array = self.array
+                self.outputArray = self.array
                 _ = self.workItem?.wait(timeout: .now() + .milliseconds(3))
             }
             self.isRunning = false
@@ -84,11 +104,5 @@ public protocol QSortViewModelType: QSortInput & QSortOutput & QSortState {}
             self.rightIndex = nil
         })
         workItem.map(workQueue.async(execute:))
-    }
-}
-
-extension QSortViewModel: QuickSortAlgorithm {
-    func swapPause() {
-        _ = workItem?.wait(timeout: .now() + .milliseconds(3))
     }
 }

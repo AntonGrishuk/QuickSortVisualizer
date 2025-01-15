@@ -10,23 +10,23 @@ public struct QSortView: View {
     public var body: some View {
         GeometryReader(content: { geometry in
             let step = geometry.size.width /
-                CGFloat(viewModel.array.count)
+            CGFloat(viewModel.outputArray.count)
             let windowHeight = geometry.size.height
-            if !viewModel.array.isEmpty {
+            if !viewModel.outputArray.isEmpty {
                 Path({ path in
                     path.move(to: .init(
                         x: CGFloat(0) * step,
                         y: windowHeight
                     ))
-                    var height = viewModel.array[0]
-                    for i in 0..<viewModel.array.count {
+                    var height = viewModel.outputArray[0]
+                    for i in 0..<viewModel.outputArray.count {
                         
                         path.addLine(to: .init(
                             x: CGFloat(i) * step,
                             y: windowHeight - height
                         ))
                         
-                        height = viewModel.array[i]
+                        height = viewModel.outputArray[i]
                         path.addLine(to: .init(
                             x: CGFloat(i) * step,
                             y: windowHeight - height
@@ -34,7 +34,7 @@ public struct QSortView: View {
                     }
                     
                     path.addLine(to: .init(
-                        x: CGFloat(viewModel.array.count - 1) * step,
+                        x: CGFloat(viewModel.outputArray.count - 1) * step,
                         y: windowHeight
                     ))
                     
@@ -54,7 +54,7 @@ public struct QSortView: View {
                             x: CGFloat(leftIndex) * step,
                             y: windowHeight
                         ))
-                        var height = viewModel.array[leftIndex]
+                        var height = viewModel.outputArray[leftIndex]
                         for i in leftIndex...rightIndex {
                             
                             path.addLine(to: .init(
@@ -62,7 +62,7 @@ public struct QSortView: View {
                                 y: windowHeight - height
                             ))
                             
-                            height = viewModel.array[i]
+                            height = viewModel.outputArray[i]
                             
                             path.addLine(to: .init(
                                 x: CGFloat(i) * step,
@@ -90,5 +90,10 @@ public struct QSortView: View {
 }
 
 #Preview {
-    QSortView(viewModel: QSortViewModel())
+    QSortView(viewModel: QSortViewModel(
+        array: [],
+        arraySize: 30,
+        arrayMaxElement: 30,
+        algorithm: .init()
+    ))
 }
